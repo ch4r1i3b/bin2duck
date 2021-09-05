@@ -60,13 +60,14 @@ def main(argv):
    sys.stdout = outfile
 
    size=os.path.getsize(binfilename)
-   print ("REM Reading ",size," bytes")
 
    infile = open(binfilename,"rb")
    bytecode = list(infile.read())
    infile.close()
 
    print(delay)
+   print ("STRING # Reading ",size," bytes")
+   print(enter)
    print("STRING $start=date")
    print(enter)
 
